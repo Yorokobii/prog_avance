@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yoro/Documents/prog_avance/project/Arkanoid/arkanoid.cpp
+SDL2/SDL.h
+-
+iostream
+-
+ball.hpp
+/home/yoro/Documents/prog_avance/project/Arkanoid/ball.hpp
+
+/home/yoro/Documents/prog_avance/project/Arkanoid/ball.hpp
+SDL2/SDL.h
+-
+iostream
+-
+

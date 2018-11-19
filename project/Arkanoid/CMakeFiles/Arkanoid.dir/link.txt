@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Arkanoid.dir/arkanoid.cpp.o  -o Arkanoid /usr/lib/libSDL2main.a /usr/lib/libSDL2.so -lpthread 

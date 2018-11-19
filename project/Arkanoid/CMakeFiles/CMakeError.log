@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63d8d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63d8d.dir/build.make CMakeFiles/cmTC_63d8d.dir/build
+make[1] : on entre dans le répertoire « /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_63d8d.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_63d8d.dir/CheckSymbolExists.cxx.o -c /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_63d8d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63d8d.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_63d8d.dir/CheckSymbolExists.cxx.o  -o cmTC_63d8d 
+/usr/bin/ld: CMakeFiles/cmTC_63d8d.dir/CheckSymbolExists.cxx.o: in function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld a retourné le statut de sortie 1
+make[1]: *** [CMakeFiles/cmTC_63d8d.dir/build.make:87: cmTC_63d8d] Error 1
+make[1] : on quitte le répertoire « /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_63d8d/fast] Error 2
+
+File /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_11a26/fast"
+/usr/bin/make -f CMakeFiles/cmTC_11a26.dir/build.make CMakeFiles/cmTC_11a26.dir/build
+make[1] : on entre dans le répertoire « /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp »
+Building CXX object CMakeFiles/cmTC_11a26.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_11a26.dir/CheckFunctionExists.cxx.o -c /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_11a26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11a26.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_11a26.dir/CheckFunctionExists.cxx.o  -o cmTC_11a26 -lpthreads 
+/usr/bin/ld : ne peut trouver -lpthreads
+collect2: error: ld a retourné le statut de sortie 1
+make[1]: *** [CMakeFiles/cmTC_11a26.dir/build.make:87: cmTC_11a26] Error 1
+make[1] : on quitte le répertoire « /home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/CMakeTmp »
+make: *** [Makefile:121: cmTC_11a26/fast] Error 2
+
+

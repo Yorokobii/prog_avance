@@ -1,0 +1,3 @@
+/home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/rebuild_cache.dir
+/home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/Arkanoid.dir
+/home/yoro/Documents/prog_avance/project/Arkanoid/CMakeFiles/edit_cache.dir
